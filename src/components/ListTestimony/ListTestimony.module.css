@@ -1,0 +1,15 @@
+.list-testimony {
+  width: 100%;
+  overflow-x: scroll;
+  padding: 1.5rem 0;
+}
+.list-testimony::-webkit-scrollbar {
+  display: none;
+}
+.list-wrapper {
+  width: fit-content;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+}

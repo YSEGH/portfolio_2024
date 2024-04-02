@@ -4,40 +4,45 @@
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+  --white: #fff;
+  --black: #000;
+  --blue: #2046f5;
+  --green: #51da4c;
+  --fts-xxl: 80px;
+  --fts-xl: 48px;
+  --fts-l: 28px;
+  --fts-md: 18px;
+  --fts-sm: 14px;
+}
 
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+h1 {
+  font-size: var(--fts-xxl);
+  font-weight: 300;
+}
 
-  --primary-glow: conic-gradient(
-    from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
-    transparent 360deg
-  );
-  --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
+h2 {
+  font-size: var(--fts-xl);
+  font-weight: 300;
+}
 
-  --tile-start-rgb: 239, 245, 249;
-  --tile-end-rgb: 228, 232, 233;
-  --tile-border: conic-gradient(
-    #00000080,
-    #00000040,
-    #00000030,
-    #00000020,
-    #00000010,
-    #00000010,
-    #00000080
-  );
+h3 {
+  font-size: var(--fts-l);
+  font-weight: 300;
+}
 
-  --callout-rgb: 238, 240, 241;
-  --callout-border-rgb: 172, 175, 176;
-  --card-rgb: 180, 185, 188;
-  --card-border-rgb: 131, 134, 135;
+h4 {
+  font-size: var(--fts-md);
+  font-weight: 300;
+}
+
+h5 {
+  font-size: var(--fts-sm);
+  font-weight: 300;
+}
+
+p {
+  font-size: var(--fts-md);
+  font-weight: 300;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -86,13 +91,13 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  height: 100vh;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+main {
+  display: flex;
 }
 
 a {

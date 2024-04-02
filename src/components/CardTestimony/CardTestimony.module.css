@@ -1,0 +1,42 @@
+.card-testimony {
+  border: 1px solid var(--white);
+  padding: 1.5rem;
+  width: 280px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.style-transparent {
+  background-color: transparent;
+}
+
+.style-green {
+  border-color: var(--green);
+  color: var(--black);
+  background-color: var(--green);
+}
+
+.style-white {
+  border-color: var(--white);
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.card-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-img {
+  border-radius: 100%;
+}
+
+.card-title {
+  font-weight: 500;
+}
