@@ -1,0 +1,16 @@
+.scroll-bar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  min-height: 10px;
+}
+
+.progress-bar {
+  height: 100%;
+  background: var(--green);
+  transform-origin: 0%;
+  transform: scaleX(0);
+}

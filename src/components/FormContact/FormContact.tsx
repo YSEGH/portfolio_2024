@@ -100,8 +100,13 @@ const FormContact: React.FC<Props> = ({}: Props) => {
   }, [errors, getErrorMessage]);
 
   return (
-    <form className={styles["form-contact"]} onSubmit={handleSubmit(onSubmit)}>
+    <form
+      autoComplete="off"
+      className={styles["form-contact"]}
+      onSubmit={handleSubmit(onSubmit)}
+    >
       <input
+        autoComplete="two-time-code"
         placeholder="Nom"
         className={cx(
           inter.className,
@@ -114,6 +119,7 @@ const FormContact: React.FC<Props> = ({}: Props) => {
         {...register("lastName")}
       />
       <input
+        autoComplete="one-time-code"
         placeholder="Prénom"
         className={cx(
           inter.className,
@@ -127,6 +133,7 @@ const FormContact: React.FC<Props> = ({}: Props) => {
       />
 
       <input
+        autoComplete="new-password"
         placeholder="Email"
         className={cx(
           inter.className,

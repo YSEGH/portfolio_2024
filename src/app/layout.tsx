@@ -3,6 +3,8 @@ import "./globals.css";
 import { AppProvider } from "@/context/AppContext";
 import Content from "@/components/Content/Content";
 import { inter } from "./font";
+import { isMobileDevice } from "@/libs/isMobileDevice";
+import cx from "classnames";
 
 export const metadata: Metadata = {
   title: "SEGHROUCHNI Youssef | Full Stack Web Developer",
@@ -14,10 +16,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const isMobile = isMobileDevice();
+
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <AppProvider>
+      <body className={cx(inter.className)}>
+        <AppProvider isMobileServer={isMobile}>
           <Content>{children}</Content>
         </AppProvider>
       </body>

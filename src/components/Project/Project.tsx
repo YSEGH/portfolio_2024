@@ -14,7 +14,7 @@ type Props = {
 const Project: React.FC<Props> = ({ title, github, link }: Props) => {
   return (
     <div className={styles["project"]}>
-      <h4>{title}</h4>
+      <h4 className={styles["project-title"]}>{title}</h4>
       <div className={styles["wrapper-links"]}>
         <Link href={github}>
           <Image src={GithubIcon} width={30} height={30} alt="github" />

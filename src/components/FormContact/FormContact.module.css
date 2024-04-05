@@ -1,8 +1,9 @@
 .form-contact {
+  margin-top: 1.5rem;
   width: 100%;
 }
 .form-input {
-  height: 90px;
+  height: 80px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -24,7 +25,14 @@
   display: none;
 }
 .input-submit {
+  border: 1px solid var(--black);
   background-color: var(--black);
   color: var(--white);
   cursor: pointer;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+.input-submit:hover {
+  background-color: var(--green);
+  color: var(--black);
 }

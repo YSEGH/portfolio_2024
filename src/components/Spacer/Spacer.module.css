@@ -1,0 +1,11 @@
+.spacer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.spacer hr {
+  border: none;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(233, 233, 233);
+}

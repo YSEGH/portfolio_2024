@@ -9,6 +9,7 @@
   transition: 0.2s;
 }
 
+.is-active,
 .filter:hover {
   background-color: var(--green);
 }

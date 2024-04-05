@@ -2,14 +2,22 @@ import React from "react";
 import styles from "./ListFilter.module.css";
 import Filter from "../Filter/Filter";
 
-type Props = {};
+type Props = {
+  activeFilters: string[];
+  setFilters: (x: string) => void;
+};
 
-const ListFilter = ({}: Props) => {
+const ListFilter: React.FC<Props> = ({ setFilters, activeFilters }: Props) => {
   return (
     <div className={styles["list-filter"]}>
       <div className={styles["list-wrapper"]}>
         {filters.map((filter: string, i: number) => (
-          <Filter key={`${i}-${filter}`} title={filter} />
+          <Filter
+            isActive={activeFilters.some((x) => x === filter)}
+            key={`${i}-${filter}`}
+            title={filter}
+            setFilters={setFilters}
+          />
         ))}
       </div>
     </div>

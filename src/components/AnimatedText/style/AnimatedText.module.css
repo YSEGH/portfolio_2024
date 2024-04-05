@@ -1,0 +1,19 @@
+.animated-text {
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.animated-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.animated-text:hover .animated-text-wrapper {
+  transform: translateY(-50%);
+}
+.text {
+  user-select: none;
+  margin: 0;
+}

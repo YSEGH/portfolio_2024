@@ -1,11 +1,11 @@
 .list-filter {
-  background-color: var(--white);
-  position: sticky;
-  top: 0;
-  left: 0;
+  height: auto;
   width: 100%;
   overflow-x: scroll;
-  padding: 1.5rem 0;
+  padding: 0 0 1.5rem;
+}
+.list-filter::-webkit-scrollbar {
+  display: none;
 }
 .list-wrapper {
   width: fit-content;

@@ -8,6 +8,10 @@
   border-top: 1px solid #00000044;
 }
 
+.project-title {
+  max-width: 50%;
+}
+
 .wrapper-links {
   display: flex;
   align-items: center;

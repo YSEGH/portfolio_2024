@@ -1,7 +1,7 @@
 .list-testimony {
   width: 100%;
   overflow-x: scroll;
-  padding: 1.5rem 0;
+  padding: 0;
 }
 .list-testimony::-webkit-scrollbar {
   display: none;
