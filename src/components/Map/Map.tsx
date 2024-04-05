@@ -9,7 +9,7 @@ const Map: React.FC = () => {
   const map = useRef(null);
   const center = { lng: 6.05562, lat: 46.22665 };
   const [zoom] = useState(10.5);
-  maptilersdk.config.apiKey = "S49hc0uT00gowik686Pv";
+  maptilersdk.config.apiKey = "";
 
   useEffect(() => {
     if (map.current) return;
